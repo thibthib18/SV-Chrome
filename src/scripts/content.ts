@@ -30,4 +30,4 @@ function setStream(streamConfig: StreamConfig) {
 }
 
 console.log("content script loaded");
-setStream({ width: 640, height: 480, fps: 10, quality: 50 });
+setStream({ width: 640, height: 480, fps: 10, quality: 10 });
