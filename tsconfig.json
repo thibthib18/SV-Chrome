@@ -9,6 +9,6 @@
     "outDir": "dist/js",
     "noEmitOnError": true,
     "typeRoots": ["node_modules/@types"],
-    "lib": ["DOM"]
+    "lib": ["DOM", "es2021"]
   }
 }

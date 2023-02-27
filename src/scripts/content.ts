@@ -26,7 +26,9 @@ function setStream(streamConfig: StreamConfig) {
   if (streamConfig.quality) {
     streamUrl.searchParams.set("quality", streamConfig.quality.toString());
   }
-  streamImage.src = streamUrl.toString();
+
+  // Forward slash is encoded to %2F, so we need to replace it
+  streamImage.src = streamUrl.toString().replaceAll("%2F", "/");
 }
 
 console.log("content script loaded");
